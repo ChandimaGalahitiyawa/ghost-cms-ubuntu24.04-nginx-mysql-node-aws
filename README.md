@@ -68,10 +68,18 @@ sudo chown chandima: chandima /var/www/ghost/example.com
 ```
 sudo chmod 775 /var/www/ghost/example.com
 ```
+
+# change user
+```
+su - chandima
+```
+
 # Then navigate into it
 ```
 cd /var/www/ghost/example.com
 ```
+
+
 
 Step 7: Install Ghost
 ```
