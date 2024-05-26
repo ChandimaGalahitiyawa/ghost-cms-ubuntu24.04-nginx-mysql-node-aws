@@ -17,10 +17,10 @@ A comprehensive guide to installing and setting up Ghost CMS on an AWS EC2 insta
 
 ## Step 2: Connect
 
-#Use AWS Console
+Use AWS Console
 
 
-#Use SSH to connect to your instance. (Terminal or Putty)
+Use SSH to connect to your instance. (Terminal or Putty)
 ```
 ssh -i your-key.pem ubuntu@your-ec2-instance-ip
 ```
@@ -29,17 +29,17 @@ ssh -i your-key.pem ubuntu@your-ec2-instance-ip
 
 ## Step 3: Add user
 
-# Create a new user and follow prompts
+Create a new user and follow prompts
 ```
 adduser chandima
 ```
 
-# Add user to superuser group to unlock admin privileges
+Add user to superuser group to unlock admin privileges
 ```
 usermod -aG sudo chandima
 ```
 
-# change user
+change user
 ```
 su - chandima
 ```
@@ -50,12 +50,12 @@ cd ~ && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get instal
 ```
 
 ## Step 5: mysql Setup
-# Enter mysql
+Enter mysql
 ```
 sudo mysql
 ```
 
-#mysql root password
+mysql root password
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'Strong_password';FLUSH PRIVILEGES;exit;
 ```
@@ -93,21 +93,27 @@ ghost install
 
 Step 8: Custom SSL
 
-#navigate nginx config
+navigate nginx config
 ```
 cd /etc/nginx/sites-available/
 ```
 
-#file list
+file list
 ```
 ls
 ```
 
-#edit nginx config
+edit nginx config
 ```
 sudo nano example.com.conf
 ```
-#nginx check
+
+change to root user
+```
+sudo su
+```
+
+nginx check
 ```
 nginx -t
 ```
