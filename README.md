@@ -62,7 +62,12 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'Strong
 
 ## Ste 6: Create Directory
 
-Step 6:  Create directory: Change sitename to whatever you like
+change permissions linux
+```
+chmod 755 /home/chandima
+```
+
+Create directory: Change sitename to whatever you like
 ```
 sudo mkdir -p /var/www/ghost/example.com
 ```
