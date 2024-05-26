@@ -27,24 +27,8 @@ ssh -i your-key.pem ubuntu@your-ec2-instance-ip
 
 
 
-## Step 3: Software installion
+## Step 3: Add user
 
-```
-cd ~ && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install nginx -y && sudo ufw allow 'Nginx Full' && sudo apt-get install mysql-server -y && sudo apt-get install ufw -y && sudo apt install certbot python3-certbot-nginx -y && cd ~ && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && source ~/.bashrc && nvm install v18.13.0 && npm install ghost-cli@latest -g
-```
-
-## Step 4: mysql Setup
-# Enter mysql
-```
-sudo mysql
-```
-
-#mysql root password
-```
-ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'Strong_password';FLUSH PRIVILEGES;exit;
-```
-
-## Ste 5: Create linux user
 # Create a new user and follow prompts
 ```
 adduser chandima
@@ -55,7 +39,30 @@ adduser chandima
 usermod -aG sudo chandima
 ```
 
-Step 6:  Create directory: Change `sitename` to whatever you like
+# change user
+```
+su - chandima
+```
+
+## Step 4: Install Softwares
+```
+cd ~ && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install nginx -y && sudo ufw allow 'Nginx Full' && sudo apt-get install mysql-server -y && sudo apt-get install ufw -y && sudo apt install certbot python3-certbot-nginx -y && cd ~ && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && source ~/.bashrc && nvm install v18.13.0 && npm install ghost-cli@latest -g
+```
+
+## Step 5: mysql Setup
+# Enter mysql
+```
+sudo mysql
+```
+
+#mysql root password
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'Strong_password';FLUSH PRIVILEGES;exit;
+```
+
+## Ste 6: Create Directory
+
+Step 6:  Create directory: Change sitename to whatever you like
 ```
 sudo mkdir -p /var/www/ghost/example.com
 ```
@@ -69,17 +76,10 @@ sudo chown chandima: chandima /var/www/ghost/example.com
 sudo chmod 775 /var/www/ghost/example.com
 ```
 
-# change user
-```
-su - chandima
-```
-
 # Then navigate into it
 ```
 cd /var/www/ghost/example.com
 ```
-
-
 
 Step 7: Install Ghost
 ```
