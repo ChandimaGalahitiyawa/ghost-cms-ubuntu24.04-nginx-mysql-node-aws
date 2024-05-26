@@ -30,7 +30,7 @@ ssh -i your-key.pem ubuntu@your-ec2-instance-ip
 ## Step 3: Software installion
 
 ```
-cd ~ && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install nginx -y && sudo ufw allow 'Nginx Full' && sudo apt-get install mysql-server -y && sudo apt-get install ufw -y && sudo apt install certbot python3-certbot-nginx -y && cd ~ && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && source ~/.bashrc && nvm install v18.13.0 && npm install ghost-cli@latest -g
+cd ~ && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install nginx -y && sudo ufw allow 'Nginx Full' && sudo apt-get install mysql-server -y && sudo apt-get install ufw -y && sudo apt install certbot python3-certbot-nginx -y && cd ~ && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash && source ~/.bashrc && nvm install v18.13.0 && npm install -g npm@10.8.0 && npm install ghost-cli@latest -g
 ```
 
 ## Step 4: mysql Setup
