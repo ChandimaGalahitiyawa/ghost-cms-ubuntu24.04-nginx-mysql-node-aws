@@ -74,7 +74,7 @@ sudo mkdir -p /var/www/ghost/example.com
 
 # Set directory owner: Replace user with the name of your user
 ```
-sudo chown chandima: chandima /var/www/ghost/example.com
+sudo chown chandima:chandima /var/www/ghost/example.com
 ```
 # Set the correct permissions
 ```
