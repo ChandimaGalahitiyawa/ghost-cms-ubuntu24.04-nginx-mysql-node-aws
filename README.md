@@ -1,6 +1,6 @@
 # Ghost CMS Installation on AWS EC2 (Ubuntu 24.04 + nginx + node (NVM) + MySQL + certbot)
 
-A comprehensive guide to installing and setting up Ghost CMS on an AWS EC2 instance using Ubuntu 24.04, nginx, nvm via nodejs, MySQL, Ghost and certbot for SSL.
+Discover the ultimate step-by-step guide for installing and setting up Ghost CMS on an AWS EC2 instance with Ubuntu 24.04. This detailed tutorial covers everything from configuring nginx and nvm via Node.js to setting up MySQL, Ghost, and securing your site with certbot for SSL. Whether you're using DigitalOcean, Contabo, Vultr, AWS Lightsail, or any other cloud service with VPS, this guide is designed to help you seamlessly deploy Ghost CMS for a robust and secure blogging platform. Enhance your website's performance and security with our expert installation guide tailored for modern cloud services.
 
 ## Prerequisites
 
