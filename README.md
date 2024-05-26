@@ -72,26 +72,26 @@ Create directory: Change sitename to whatever you like
 sudo mkdir -p /var/www/ghost/example.com
 ```
 
-# Set directory owner: Replace user with the name of your user
+Set directory owner: Replace user with the name of your user
 ```
 sudo chown chandima:chandima /var/www/ghost/example.com
 ```
-# Set the correct permissions
+Set the correct permissions
 ```
 sudo chmod 775 /var/www/ghost/example.com
 ```
 
-# Then navigate into it
+Then navigate into it
 ```
 cd /var/www/ghost/example.com
 ```
 
-Step 7: Install Ghost
+## Step 7: Install Ghost
 ```
 ghost install
 ```
 
-Step 8: Custom SSL
+## Step 8: Custom SSL
 
 navigate nginx config
 ```
